@@ -93,3 +93,89 @@ html, body{
     background-color: #000;
     color: #fff;
 }
+
+
+/* Features */
+
+#featured{
+    padding: 12vw 18vw;
+
+}
+
+#fHeading> h1{
+    line-height: 1;
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+#fHeading> h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+#fImages{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+
+    margin-top: 5vw;
+}
+
+/* Featured Left */
+#fLeft{
+    
+    width: 45%;
+    min-height: inherit;
+    overflow: auto;
+     
+}
+
+
+.fleftElem{
+   
+    width: 100%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.fleftElem h1{
+    font-size: 2vw;
+    line-height: 1;
+    font-weight: 400;
+    margin: 2vw 0;
+    text-transform: capitalize;
+}
+
+.fleftElem h4{
+    opacity: .5;
+}
+
+.fleftElem h3{
+    font-size: 1.3vw;
+    font-weight: 100;
+    
+}
+
+
+/* Featured Right */
+#fRight{
+   
+    width: 45%;
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    
+}
+
+#fRight .images{
+    width: 90%;
+    height: 90%;
+    background-color: red;
+}
