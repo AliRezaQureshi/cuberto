@@ -3,7 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "font";
+
 }
+
+*::selection{
+    background-color: #000;
+    color: #fff;
+}    
 
 html, body{
     width: 100%;
@@ -81,6 +87,10 @@ html, body{
 
 }
 
+#headings h1:hover{
+    color: #000;
+}
+
 #homeLast p{
     font-size: 1.2vw;
     font-weight: 200;
@@ -122,6 +132,12 @@ html, body{
     margin-top: 5vw;
     height: 100vh;
     
+}
+
+#fright .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Featured info left */
@@ -177,18 +193,143 @@ html, body{
 
 /* Button view all projetcs */
 
-#btndiv{
+.btndiv{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
-#btndiv button{
-    padding: 1.2vw 2.5vw;
+.btndiv button{
+    padding: 1.2vw 2.2vw;
+    margin: 6vw 0 6vw 0;
     border-radius: 100px;
     border: 2px solid #e6e6e6;
     background-color: #fff;
     font-size: 1.2vw;
     font-weight: 500;
     letter-spacing:  -1px;
+    
+}
+
+/* Dev  */
+
+#dev{
+    width: 100%;
+    padding: 5vw 18vw;
+
+}
+
+#dev h1{
+    font-size: 2.5vw;
+    font-weight: 400;
+    width: 40%;
+    line-height: 1.1;
+}
+
+#dev p{
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
+    letter-spacing: -1px;
+    width: 50%;
+}
+
+/* Slides */
+
+#slides{
+    padding: 3vw 10vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.slide{
+    width: 30%;
+    
+}
+.slide .img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide .tag{
+    width: fit-content;
+    border-radius: 100px;
+    margin: 20px 0;
+    padding: 10px 22px;
+    background-color: #f7f7f7;
+
+}
+
+.slide .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide h3{
+    font-size: 1.2vw;
+    font-weight: 400;
+    letter-spacing: -.5px;
+}
+
+/* insprio */
+.insprioTitle{
+    display: flex;
+    padding: 3vw 10vw;
+    width: 100%;
+    
+}
+#new{
+    width: 20%;
+}
+#new h1{
+    font-size: 2.5vw;
+    font-weight: 200;
+    letter-spacing: -.5px;
+    
+
+}
+
+#inspiro{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2vw 10vw;
+
+}
+
+#inspiro p{
+    font-size: .8vw;
+    letter-spacing: -.5px;
+    color: #a5a5a5;
+}
+#insta{
+    width: 20%;
+}
+#insta .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 1.4vw;
+    border-radius: 10px;
+}
+
+.itag{
+    display: flex;
+    margin: 1vw 0 .7vw 0;
+    gap: 7px;
+    
+}
+
+.itag h4{
+    font-weight: 500;
+    font-size: .1vw;
+    line-height: -1;
+}
+.itag i{
+    font-size: .8vw;
+    margin-top: 3px;
+    font-weight: 500;
 }
