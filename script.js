@@ -2,7 +2,6 @@ Shery.mouseFollower();
 Shery.makeMagnet(".magnet");
 Shery.hoverWithMediaCircle(".hvr", {videos: ["./one.mp4", "./two.mp4", "./three.mp4"]});
 
-
 gsap.to(".fleftelem", {
     scrollTrigger: {
         trigger: "#fimages",
@@ -10,27 +9,26 @@ gsap.to(".fleftelem", {
         start: "top top",
         end: "bottom bottom",
         endTrigger: ".last",
-        scrub: 1,
+        scrub: 1
     },
     y: "-300%",
-    ease: Power1,
+    ease: Power1.easeInOut
 })
 
 let sections = document.querySelectorAll(".fleftelem");
-
 Shery.imageEffect(".images", {
-    style: 4,
-    config: { onMouse: { value: 1 } },
+    style: 5,
+    config: {onMouse: {value: 1}},
     slideStyle: (setScroll) => {
-        sections.forEach(function(section, index){
-            ScrollTrigger.create({
-                trigger: section,
-                start: "top top",
-                scrub: 1,
-                onUpdate: function(prog){
-                    setScroll(prog.progress + index)
-                },
-            });
+      sections.forEach((section, i) => {
+        ScrollTrigger.create({
+            trigger: section,
+            start: "top top",
+            scrub: 1,
+            onUpdate: function(prog){
+                setScroll(prog.progress + i);
+            },
         });
+      });
     },
-  });
+});
